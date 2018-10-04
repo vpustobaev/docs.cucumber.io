@@ -999,8 +999,11 @@ import cucumber.api.java.en.Then;
 import static org.junit.Assert.*;
 
 class IsItFriday {
-    static String isItFriday(String today) {
-        return null;
+static String isItFriday(String today) {
+        if (today.equals("Friday")) {
+            return "TGIF";
+        }
+        return "Nope";
     }
 }
 
